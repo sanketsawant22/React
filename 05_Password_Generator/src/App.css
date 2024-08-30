@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #212121;
+  /* background-color: #212121; */
+}
+
+
+#outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lavender;
+  height: 200px;
+  width: 800px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+#input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  border-radius: 15px;
+  background-color: white;
+  overflow: hidden;
+}
+
+#input input {
+  margin-left: 15px;
+  height: 40px;
+  width: 100%;
+  /* background-color: red; */
+  border: none;
+}
+
+#input button {
+  height: 40px;
+  background-color: rgb(93, 93, 215);
+  width: 80px;
+  color: white;
+  font-size: larger;
+}
+
+#controller {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#controller #cc input {
+  margin-right: 5px;
+}

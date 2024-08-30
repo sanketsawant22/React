@@ -10,9 +10,25 @@ function App() {
   // let count = 0;
 
   const increaseValue = () => {
-    console.log("clicked");
-    count++
-    setCount(count)
+    // console.log("clicked");
+    
+    setCount(count++)
+    // setCount(count++)      if we make same copies still it increase only once 
+    // setCount(count++)      because of fibre which pack the bundle and send to execute
+    // setCount(count++)      thus it execute only once
+
+
+    // but if we want to make it execute multiple times
+
+    // setcount takes arrow function with previuos count as parameter
+
+  //   setCount((prevCount) => {        
+  //     return prevCount + 1
+  //   })
+
+  //   setCount((prevCount) => {
+  //     return prevCount + 1
+  //   })
   }
 
   const decreaseValue = () => {
@@ -22,8 +38,7 @@ function App() {
     }
 
     else {
-      count--
-      setCount(count)
+      setCount(count--)
     }
   }
 
