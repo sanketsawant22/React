@@ -40,7 +40,7 @@ function App() {
             type='text'
             placeholder='Password'
             className='outline-none'
-            readOnly
+            readOnl
             value={password}
           />
           <button onClick={() => navigator.clipboard.writeText(password)}>Copy</button>
