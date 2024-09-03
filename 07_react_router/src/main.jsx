@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './components/Home/home.jsx'
 import About from './components/About/about.jsx'
 import Contact from './components/contact/contact.jsx'
+import User from './components/User/User.jsx'
+import GitHub from './components/Github/Github.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -15,6 +17,8 @@ createRoot(document.getElementById('root')).render(
           <Route path='home' element={<Home/>}/>
           <Route path='about' element={<About/>}/>
           <Route path='contact' element={<Contact/>}/>
+          <Route path='/home/:userID' element={<User/>}/>
+          <Route path='github' element={<GitHub/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
