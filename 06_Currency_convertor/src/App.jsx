@@ -20,25 +20,24 @@ function App() {
     setConvertedAmount(amount)
     setAmount(convertedAmount)
   }
-  
+
   const convert = () => {
     setConvertedAmount(amount * currencyInfo[to])
   }
 
   return (
     <div
-        className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+        className="w-full h-screen flex flex-wrap justify-center items-center bg-cover"
         style={{
-            backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+            backgroundImage: `url('https://images.pexels.com/photos/6120218/pexels-photo-6120218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
         }}
     >
         <div className="w-full">
-            <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+            <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-gray/10">
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
                         convert()
-                       
                     }}
                 >
                     <div className="w-full mb-1">
